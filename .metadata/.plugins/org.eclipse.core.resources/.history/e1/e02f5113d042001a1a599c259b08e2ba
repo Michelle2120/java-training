@@ -1,0 +1,17 @@
+package Assignment;
+
+public class Lab1 {
+
+	public static void main(String[] args) {
+		// This function will take a value n and return the sum of numbers 1 to n
+	
+    sumOfnumbers(int n + 1);
+	}
+	 public static int n(int sumOfnumbers){
+		return sumOfnumbers;
+		 
+	 }
+		
+	}
+
+

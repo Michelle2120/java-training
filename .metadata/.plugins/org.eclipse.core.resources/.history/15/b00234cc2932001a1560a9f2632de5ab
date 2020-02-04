@@ -1,0 +1,14 @@
+package basics;
+
+public class Numberscal {
+  public static void main (String[] args) {
+	  
+	static void printname() {
+	   System.out.println("My nameis Rutendo");
+	  addnumbers{}
+	  
+	  multiplynumbers{}
+	  }
+			  
+  }
+}

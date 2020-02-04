@@ -1,0 +1,10 @@
+1. initialise
+	git init
+	git remote add origin github_link
+
+
+
+2.Push code to github
+	git add -A
+	git commit -m "message here"
+	git push origin master

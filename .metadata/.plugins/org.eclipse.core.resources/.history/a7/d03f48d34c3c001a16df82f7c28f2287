@@ -1,0 +1,18 @@
+package OOP;
+
+public class Objects {
+   public static void main (String[] args){
+	   
+	   Student myStudent = new Student(){
+		   myStudent.fame = "Jim";
+		   myStudent.lastName = "Halpert";
+		   myStudent.major = "Business";
+		   myStudent.gpa = 2.3;
+		   myStudent.age = 19;
+		   myStudent.onProbation = true;
+		   System.out.println(myStudent.lastname);
+		   
+	   }
+   }
+}
+   

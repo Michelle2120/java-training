@@ -1,0 +1,50 @@
+package OOP;
+
+public class BankAccount {
+	String accountnumber;
+	// static >> belongs to the class not the object instance
+	// final >> constant often static final
+	static final String routingnumber = "01345";
+	String namenumber;
+	String ssnnumber;
+	String accountType;
+	double balance = 0;
+
+	// Constructor definitions: unique accounts
+	// 1.They are used to define/setup/initialize properties of an object
+	// 2.Constructors are IMPLICITLY called upon instantiation
+	// 3.The same name as the class itself
+	// 4.Constructors have no return type
+
+	BankAccount() {
+		System.out.println("NEW ACCOUNT CREATED");
+	}
+
+	// Overloading:call same method with different arguments
+	BankAccount(String AccountType) {
+		System.out.println("NEW ACCOUNT :" + AccountType);
+	}
+
+	BankAccount(String accountType, double initDeposit) {
+		System.out.println("NEW ACCOUNT");
+		System.out.println("Initial deposit of: $" + initDeposit);
+
+	}
+
+	// define methods
+
+	void deposit() {
+	}
+
+	void withdrawal() {
+	}
+
+	void checkBalance() {
+		System.out.println("Balance:" + balance);
+	}
+
+	void getStatus() {
+
+	}
+
+}

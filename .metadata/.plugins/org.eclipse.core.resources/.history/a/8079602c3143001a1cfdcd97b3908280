@@ -1,0 +1,74 @@
+package OOP;
+
+public class BankAccount {
+	String accountnumber;
+	// static >> belongs to the class not the object instance
+	// final >> constant often static final
+	private static final String routingnumber = "01345";
+	// Instance variables
+	String name;
+	String ssnnumber;
+	String accountType;
+	double balance = 0;
+	String activity;
+
+	// Constructor definitions: unique accounts
+	// 1.They are used to define/setup/initialize properties of an object
+	// 2.Constructors are IMPLICITLY called upon instantiation
+	// 3.The same name as the class itself
+	// 4.Constructors have no return type
+
+	BankAccount() {
+		System.out.println("NEW ACCOUNT CREATED");
+	}
+
+	// Overloading:call same method with different arguments
+	BankAccount(String AccountType) {
+		System.out.println("NEW ACCOUNT :" + AccountType);
+	}
+
+	// initDeposit ,accountType and Msg are all local variables
+	BankAccount(String accountType, double initDeposit) {
+		System.out.println("NEW ACCOUNT :" + accountType);
+		System.out.println("Initial deposit of: $" + initDeposit);
+		String Msg = null;
+		if (initDeposit < 1000) {
+			Msg = ("ERROR:Minimum deposit must be at least 1000");
+			System.out.println(Msg);
+		} else {
+			Msg = ("Thanks for the initial deposit of:" + initDeposit);
+		}
+		System.out.println(Msg);
+		balance = initDeposit;
+	}
+
+	// define methods
+
+	// Override
+	public String toString (){
+		return"("+ name + "." + accountnumber + ", BALANCE:$ + balance + ")";
+	}
+
+	public void deposit(double amount) {
+		balance = balance + amount;
+		showActivity("DEPOSIT");
+	}
+
+	public void withdrawal(double amount) {
+		balance = balance + amount;
+		showActivity("WITHDRAW");
+	}
+
+	void checkBalance() {
+		System.out.println("Balance:" + balance);
+	}
+
+	void getStatus() {
+
+	}
+
+	private void showActivity(String activity) {
+		System.out.println("Showing recent activity");
+	}
+
+}
